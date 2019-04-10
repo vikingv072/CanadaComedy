@@ -18,6 +18,7 @@
 		AF18E633225E743A00842140 /* CanadaComedyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E632225E743A00842140 /* CanadaComedyTests.swift */; };
 		AF18E63E225E743A00842140 /* CanadaComedyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */; };
 		AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37D225E776B00076F92 /* ModelFile.swift */; };
+		AF29D380225E7BBD00076F92 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37F225E7BBD00076F92 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaComedyUITests.swift; sourceTree = "<group>"; };
 		AF18E63F225E743A00842140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF29D37D225E776B00076F92 /* ModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFile.swift; sourceTree = "<group>"; };
+		AF29D37F225E7BBD00076F92 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.release.xcconfig"; sourceTree = "<group>"; };
 		C982B846706CACF80A172652 /* Pods-CanadaComedyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyTests.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedyTests/Pods-CanadaComedyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E899678964FBAFC6AF0D6506 /* Pods-CanadaComedyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyUITests.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedyUITests/Pods-CanadaComedyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				AF18E61D225E743900842140 /* AppDelegate.swift */,
 				AF18E61F225E743900842140 /* MainViewController.swift */,
 				AF29D37D225E776B00076F92 /* ModelFile.swift */,
+				AF29D37F225E7BBD00076F92 /* NetworkService.swift */,
 				AF18E621225E743900842140 /* Main.storyboard */,
 				AF18E624225E743900842140 /* Assets.xcassets */,
 				AF18E626225E743900842140 /* LaunchScreen.storyboard */,
@@ -391,6 +394,7 @@
 			files = (
 				AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */,
 				AF18E620225E743900842140 /* MainViewController.swift in Sources */,
+				AF29D380225E7BBD00076F92 /* NetworkService.swift in Sources */,
 				AF18E61E225E743900842140 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
