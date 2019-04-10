@@ -1,0 +1,6 @@
+framework module Pods_CanadaComedy {
+  umbrella header "Pods-CanadaComedy-umbrella.h"
+
+  export *
+  module * { export * }
+}

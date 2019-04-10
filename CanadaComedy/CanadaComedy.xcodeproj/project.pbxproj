@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		786249ABB5F62AC94F1CD8FB /* Pods_CanadaComedyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41577C706A62E2EF3CF76812 /* Pods_CanadaComedyTests.framework */; };
+		9CF3AE50278FC6CE5282BF8F /* Pods_CanadaComedyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA9CFB1E54A589F3DB150D1 /* Pods_CanadaComedyUITests.framework */; };
+		A27E29E91CB9E54EC904FA05 /* Pods_CanadaComedy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3DE126E68FDFF0BCE66371 /* Pods_CanadaComedy.framework */; };
+		AF18E61E225E743900842140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E61D225E743900842140 /* AppDelegate.swift */; };
+		AF18E620225E743900842140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E61F225E743900842140 /* ViewController.swift */; };
+		AF18E623225E743900842140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF18E621225E743900842140 /* Main.storyboard */; };
+		AF18E625225E743900842140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF18E624225E743900842140 /* Assets.xcassets */; };
+		AF18E628225E743900842140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF18E626225E743900842140 /* LaunchScreen.storyboard */; };
+		AF18E633225E743A00842140 /* CanadaComedyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E632225E743A00842140 /* CanadaComedyTests.swift */; };
+		AF18E63E225E743A00842140 /* CanadaComedyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF18E62F225E743900842140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF18E612225E743900842140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF18E619225E743900842140;
+			remoteInfo = CanadaComedy;
+		};
+		AF18E63A225E743A00842140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF18E612225E743900842140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF18E619225E743900842140;
+			remoteInfo = CanadaComedy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BA9CFB1E54A589F3DB150D1 /* Pods_CanadaComedyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanadaComedyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C63797DAB91BAEAE46EB90B /* Pods-CanadaComedyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyUITests.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedyUITests/Pods-CanadaComedyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41577C706A62E2EF3CF76812 /* Pods_CanadaComedyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanadaComedyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E7C6AAB3000F6B274384F8 /* Pods-CanadaComedy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.debug.xcconfig"; sourceTree = "<group>"; };
+		AF18E61A225E743900842140 /* CanadaComedy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaComedy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF18E61D225E743900842140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF18E61F225E743900842140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF18E622225E743900842140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF18E624225E743900842140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF18E627225E743900842140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF18E629225E743900842140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF18E62E225E743900842140 /* CanadaComedyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaComedyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF18E632225E743A00842140 /* CanadaComedyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaComedyTests.swift; sourceTree = "<group>"; };
+		AF18E634225E743A00842140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF18E639225E743A00842140 /* CanadaComedyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaComedyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaComedyUITests.swift; sourceTree = "<group>"; };
+		AF18E63F225E743A00842140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.release.xcconfig"; sourceTree = "<group>"; };
+		C982B846706CACF80A172652 /* Pods-CanadaComedyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyTests.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedyTests/Pods-CanadaComedyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E899678964FBAFC6AF0D6506 /* Pods-CanadaComedyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyUITests.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedyUITests/Pods-CanadaComedyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB3DE126E68FDFF0BCE66371 /* Pods_CanadaComedy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanadaComedy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30E282262674D1AA7D9DE9E /* Pods-CanadaComedyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyTests.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedyTests/Pods-CanadaComedyTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF18E617225E743900842140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27E29E91CB9E54EC904FA05 /* Pods_CanadaComedy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF18E62B225E743900842140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786249ABB5F62AC94F1CD8FB /* Pods_CanadaComedyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF18E636225E743A00842140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF3AE50278FC6CE5282BF8F /* Pods_CanadaComedyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF18E611225E743900842140 = {
+			isa = PBXGroup;
+			children = (
+				AF18E61C225E743900842140 /* CanadaComedy */,
+				AF18E631225E743A00842140 /* CanadaComedyTests */,
+				AF18E63C225E743A00842140 /* CanadaComedyUITests */,
+				AF18E61B225E743900842140 /* Products */,
+				ED444810058824D9FB49B847 /* Pods */,
+				B9AE6CEA144083B96A01711C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF18E61B225E743900842140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF18E61A225E743900842140 /* CanadaComedy.app */,
+				AF18E62E225E743900842140 /* CanadaComedyTests.xctest */,
+				AF18E639225E743A00842140 /* CanadaComedyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF18E61C225E743900842140 /* CanadaComedy */ = {
+			isa = PBXGroup;
+			children = (
+				AF18E61D225E743900842140 /* AppDelegate.swift */,
+				AF18E61F225E743900842140 /* ViewController.swift */,
+				AF18E621225E743900842140 /* Main.storyboard */,
+				AF18E624225E743900842140 /* Assets.xcassets */,
+				AF18E626225E743900842140 /* LaunchScreen.storyboard */,
+				AF18E629225E743900842140 /* Info.plist */,
+			);
+			path = CanadaComedy;
+			sourceTree = "<group>";
+		};
+		AF18E631225E743A00842140 /* CanadaComedyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF18E632225E743A00842140 /* CanadaComedyTests.swift */,
+				AF18E634225E743A00842140 /* Info.plist */,
+			);
+			path = CanadaComedyTests;
+			sourceTree = "<group>";
+		};
+		AF18E63C225E743A00842140 /* CanadaComedyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */,
+				AF18E63F225E743A00842140 /* Info.plist */,
+			);
+			path = CanadaComedyUITests;
+			sourceTree = "<group>";
+		};
+		B9AE6CEA144083B96A01711C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB3DE126E68FDFF0BCE66371 /* Pods_CanadaComedy.framework */,
+				41577C706A62E2EF3CF76812 /* Pods_CanadaComedyTests.framework */,
+				3BA9CFB1E54A589F3DB150D1 /* Pods_CanadaComedyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED444810058824D9FB49B847 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88E7C6AAB3000F6B274384F8 /* Pods-CanadaComedy.debug.xcconfig */,
+				AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */,
+				C982B846706CACF80A172652 /* Pods-CanadaComedyTests.debug.xcconfig */,
+				F30E282262674D1AA7D9DE9E /* Pods-CanadaComedyTests.release.xcconfig */,
+				3C63797DAB91BAEAE46EB90B /* Pods-CanadaComedyUITests.debug.xcconfig */,
+				E899678964FBAFC6AF0D6506 /* Pods-CanadaComedyUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF18E619225E743900842140 /* CanadaComedy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF18E642225E743A00842140 /* Build configuration list for PBXNativeTarget "CanadaComedy" */;
+			buildPhases = (
+				AF29D37C225E74E400076F92 /* ShellScript */,
+				49DE4BC142A458D2E9A65EE4 /* [CP] Check Pods Manifest.lock */,
+				AF18E616225E743900842140 /* Sources */,
+				AF18E617225E743900842140 /* Frameworks */,
+				AF18E618225E743900842140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CanadaComedy;
+			productName = CanadaComedy;
+			productReference = AF18E61A225E743900842140 /* CanadaComedy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF18E62D225E743900842140 /* CanadaComedyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF18E645225E743A00842140 /* Build configuration list for PBXNativeTarget "CanadaComedyTests" */;
+			buildPhases = (
+				8491089965ED6CADB7B79430 /* [CP] Check Pods Manifest.lock */,
+				AF18E62A225E743900842140 /* Sources */,
+				AF18E62B225E743900842140 /* Frameworks */,
+				AF18E62C225E743900842140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF18E630225E743900842140 /* PBXTargetDependency */,
+			);
+			name = CanadaComedyTests;
+			productName = CanadaComedyTests;
+			productReference = AF18E62E225E743900842140 /* CanadaComedyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF18E638225E743A00842140 /* CanadaComedyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF18E648225E743A00842140 /* Build configuration list for PBXNativeTarget "CanadaComedyUITests" */;
+			buildPhases = (
+				11729E4C9353C86435E808BF /* [CP] Check Pods Manifest.lock */,
+				AF18E635225E743A00842140 /* Sources */,
+				AF18E636225E743A00842140 /* Frameworks */,
+				AF18E637225E743A00842140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF18E63B225E743A00842140 /* PBXTargetDependency */,
+			);
+			name = CanadaComedyUITests;
+			productName = CanadaComedyUITests;
+			productReference = AF18E639225E743A00842140 /* CanadaComedyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF18E612225E743900842140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = C02PX1DFFVH5;
+				TargetAttributes = {
+					AF18E619225E743900842140 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					AF18E62D225E743900842140 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AF18E619225E743900842140;
+					};
+					AF18E638225E743A00842140 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AF18E619225E743900842140;
+					};
+				};
+			};
+			buildConfigurationList = AF18E615225E743900842140 /* Build configuration list for PBXProject "CanadaComedy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF18E611225E743900842140;
+			productRefGroup = AF18E61B225E743900842140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF18E619225E743900842140 /* CanadaComedy */,
+				AF18E62D225E743900842140 /* CanadaComedyTests */,
+				AF18E638225E743A00842140 /* CanadaComedyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF18E618225E743900842140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF18E628225E743900842140 /* LaunchScreen.storyboard in Resources */,
+				AF18E625225E743900842140 /* Assets.xcassets in Resources */,
+				AF18E623225E743900842140 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF18E62C225E743900842140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF18E637225E743A00842140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11729E4C9353C86435E808BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanadaComedyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49DE4BC142A458D2E9A65EE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanadaComedy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8491089965ED6CADB7B79430 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanadaComedyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF29D37C225E74E400076F92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF18E616225E743900842140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF18E620225E743900842140 /* ViewController.swift in Sources */,
+				AF18E61E225E743900842140 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF18E62A225E743900842140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF18E633225E743A00842140 /* CanadaComedyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF18E635225E743A00842140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF18E63E225E743A00842140 /* CanadaComedyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF18E630225E743900842140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF18E619225E743900842140 /* CanadaComedy */;
+			targetProxy = AF18E62F225E743900842140 /* PBXContainerItemProxy */;
+		};
+		AF18E63B225E743A00842140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF18E619225E743900842140 /* CanadaComedy */;
+			targetProxy = AF18E63A225E743A00842140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF18E621225E743900842140 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF18E622225E743900842140 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF18E626225E743900842140 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF18E627225E743900842140 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF18E640225E743A00842140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF18E641225E743A00842140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF18E643225E743A00842140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E7C6AAB3000F6B274384F8 /* Pods-CanadaComedy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaComedy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.CComedy.CanadaComedy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF18E644225E743A00842140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaComedy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.CComedy.CanadaComedy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF18E646225E743A00842140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C982B846706CACF80A172652 /* Pods-CanadaComedyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaComedyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.CComedy.CanadaComedyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaComedy.app/CanadaComedy";
+			};
+			name = Debug;
+		};
+		AF18E647225E743A00842140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F30E282262674D1AA7D9DE9E /* Pods-CanadaComedyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaComedyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.CComedy.CanadaComedyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanadaComedy.app/CanadaComedy";
+			};
+			name = Release;
+		};
+		AF18E649225E743A00842140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C63797DAB91BAEAE46EB90B /* Pods-CanadaComedyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaComedyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.CComedy.CanadaComedyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CanadaComedy;
+			};
+			name = Debug;
+		};
+		AF18E64A225E743A00842140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E899678964FBAFC6AF0D6506 /* Pods-CanadaComedyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CanadaComedyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.CComedy.CanadaComedyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CanadaComedy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF18E615225E743900842140 /* Build configuration list for PBXProject "CanadaComedy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF18E640225E743A00842140 /* Debug */,
+				AF18E641225E743A00842140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF18E642225E743A00842140 /* Build configuration list for PBXNativeTarget "CanadaComedy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF18E643225E743A00842140 /* Debug */,
+				AF18E644225E743A00842140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF18E645225E743A00842140 /* Build configuration list for PBXNativeTarget "CanadaComedyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF18E646225E743A00842140 /* Debug */,
+				AF18E647225E743A00842140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF18E648225E743A00842140 /* Build configuration list for PBXNativeTarget "CanadaComedyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF18E649225E743A00842140 /* Debug */,
+				AF18E64A225E743A00842140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF18E612225E743900842140 /* Project object */;
+}
