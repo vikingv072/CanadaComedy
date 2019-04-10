@@ -11,12 +11,13 @@
 		9CF3AE50278FC6CE5282BF8F /* Pods_CanadaComedyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA9CFB1E54A589F3DB150D1 /* Pods_CanadaComedyUITests.framework */; };
 		A27E29E91CB9E54EC904FA05 /* Pods_CanadaComedy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3DE126E68FDFF0BCE66371 /* Pods_CanadaComedy.framework */; };
 		AF18E61E225E743900842140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E61D225E743900842140 /* AppDelegate.swift */; };
-		AF18E620225E743900842140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E61F225E743900842140 /* ViewController.swift */; };
+		AF18E620225E743900842140 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E61F225E743900842140 /* MainViewController.swift */; };
 		AF18E623225E743900842140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF18E621225E743900842140 /* Main.storyboard */; };
 		AF18E625225E743900842140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF18E624225E743900842140 /* Assets.xcassets */; };
 		AF18E628225E743900842140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF18E626225E743900842140 /* LaunchScreen.storyboard */; };
 		AF18E633225E743A00842140 /* CanadaComedyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E632225E743A00842140 /* CanadaComedyTests.swift */; };
 		AF18E63E225E743A00842140 /* CanadaComedyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */; };
+		AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37D225E776B00076F92 /* ModelFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 		88E7C6AAB3000F6B274384F8 /* Pods-CanadaComedy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.debug.xcconfig"; sourceTree = "<group>"; };
 		AF18E61A225E743900842140 /* CanadaComedy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaComedy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF18E61D225E743900842140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF18E61F225E743900842140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF18E61F225E743900842140 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AF18E622225E743900842140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF18E624225E743900842140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF18E627225E743900842140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		AF18E639225E743A00842140 /* CanadaComedyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaComedyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF18E63D225E743A00842140 /* CanadaComedyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaComedyUITests.swift; sourceTree = "<group>"; };
 		AF18E63F225E743A00842140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF29D37D225E776B00076F92 /* ModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFile.swift; sourceTree = "<group>"; };
 		AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.release.xcconfig"; sourceTree = "<group>"; };
 		C982B846706CACF80A172652 /* Pods-CanadaComedyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyTests.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedyTests/Pods-CanadaComedyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E899678964FBAFC6AF0D6506 /* Pods-CanadaComedyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyUITests.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedyUITests/Pods-CanadaComedyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				AF18E61D225E743900842140 /* AppDelegate.swift */,
-				AF18E61F225E743900842140 /* ViewController.swift */,
+				AF18E61F225E743900842140 /* MainViewController.swift */,
+				AF29D37D225E776B00076F92 /* ModelFile.swift */,
 				AF18E621225E743900842140 /* Main.storyboard */,
 				AF18E624225E743900842140 /* Assets.xcassets */,
 				AF18E626225E743900842140 /* LaunchScreen.storyboard */,
@@ -386,7 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF18E620225E743900842140 /* ViewController.swift in Sources */,
+				AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */,
+				AF18E620225E743900842140 /* MainViewController.swift in Sources */,
 				AF18E61E225E743900842140 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
