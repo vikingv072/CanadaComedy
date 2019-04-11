@@ -11,6 +11,13 @@ import Foundation
 final class NetworkService {
     static let shared = NetworkService()
     let someUrl = URL(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json")
+    func nullTonil(value: AnyObject) -> AnyObject? {
+        if value is NSNull {
+            return nil
+        } else {
+            return value
+        }
+    }
     func downloader(_ completion: @escaping (([CanadaModel]) -> Void)) {
         guard let useUrl = someUrl else { return }
         URLSession.shared.dataTask(with: useUrl){ (data, _ , _ ) in guard let useData = data else {
@@ -20,7 +27,7 @@ final class NetworkService {
             let decoder = JSONDecoder()
             do {
                 let val = try? decoder.decode([CanadaModel].self, from: useData)
-                completion(val!)
+                completion(val ?? [])
             } catch { print(error) }
         }.resume()
     }
