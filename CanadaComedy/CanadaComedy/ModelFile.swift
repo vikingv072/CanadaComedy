@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct BaseModel: Codable {
+    let rows: [CanadaModel]
+}
+
 class CanadaModel: Codable {
     var title: String?
     var description: String?

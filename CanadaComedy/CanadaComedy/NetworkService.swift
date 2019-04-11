@@ -20,15 +20,27 @@ final class NetworkService {
     }
     func downloader(_ completion: @escaping (([CanadaModel]) -> Void)) {
         guard let useUrl = someUrl else { return }
-        URLSession.shared.dataTask(with: useUrl){ (data, _ , _ ) in guard let useData = data else {
+        URLSession.shared.dataTask(with: useUrl){ (data, response , _ ) in guard let useData = data else {
                 print("Going Wonky")
                 return}
             print("Downloaded")
+            guard let isoLatStr = String(data: useData, encoding: .isoLatin1) else {// ISO-8859-1
+                print("incorrect format")
+                return
+            }
+            print(isoLatStr)
+            guard let utf8Dat = isoLatStr.data(using: .utf8) else {
+                print("Could not make utf8")
+                return
+            }
             let decoder = JSONDecoder()
             do {
-                let val = try? decoder.decode([CanadaModel].self, from: useData)
-                completion(val ?? [])
-            } catch { print(error) }
+                let val = try decoder.decode(BaseModel.self, from: utf8Dat)
+                completion(val.rows)
+                print(val.rows.count)
+            } catch {
+                print(error)
+            }
         }.resume()
     }
 }
