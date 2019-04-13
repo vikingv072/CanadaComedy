@@ -22,13 +22,13 @@ class MainViewController: UIViewController {
         self.viewModel.getFacts()
     }
     func setTable() {
-        self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let factsNib = UINib(nibName: "FactTableViewCell", bundle: nil)
+        tableView.register(factsNib, forCellReuseIdentifier: "FactTableViewCell")
     }
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
