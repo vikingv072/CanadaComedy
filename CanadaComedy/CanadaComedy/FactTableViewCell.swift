@@ -12,12 +12,10 @@ class FactTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descLabel: UILabel!
     @IBOutlet var imageViewer: UIImageView!
-    var datImg: Data? = Data()
     func imageConfigurer(with factoid: CanadaModel) {
         NetworkService.shared.imageDload(factoid) { [weak self] (imagedata) in
             DispatchQueue.main.async {
                 self?.imageViewer.contentMode = .scaleAspectFit
-                self?.datImg = imagedata
                 if imagedata != nil {
                     self?.imageViewer.image = UIImage(data: imagedata!)
                 } else {
