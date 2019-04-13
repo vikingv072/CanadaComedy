@@ -9,18 +9,12 @@
 import Foundation
 
 final class NetworkService {
+    private let imagesCache = NSCache<NSString, NSData>()
     static let shared = NetworkService()
     let someUrl = URL(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json")
-    func nullTonil(value: AnyObject) -> AnyObject? {
-        if value is NSNull {
-            return nil
-        } else {
-            return value
-        }
-    }
     func downloader(_ completion: @escaping (([CanadaModel]) -> Void)) {
         guard let useUrl = someUrl else { return }
-        URLSession.shared.dataTask(with: useUrl){ (data, response , _ ) in guard let useData = data else {
+        URLSession.shared.dataTask(with: useUrl) { (data, _, _) in guard let useData = data else {
                 print("Going Wonky")
                 return}
             print("Downloaded")
@@ -42,5 +36,33 @@ final class NetworkService {
                 print(error)
             }
         }.resume()
+    }
+    func imager(_ factoid: CanadaModel, _ completion: @escaping ((Data?) -> Void)) {
+        let URlstr = factoid.imagehref ?? ""
+        if let data = self.imagesCache.object(forKey: NSString(string: URlstr)) {
+            completion(Data(referencing: data))
+            return
+        }
+        guard let nURL = URL(string: URlstr) else { return }
+        URLSession.shared.dataTask(with: nURL, completionHandler: { (data, _, _) in guard let safeData = data else {
+            completion(nil)
+            return
+            }
+            self.imagesCache.setObject(NSData(data: safeData), forKey: NSString(string: URlstr))
+            factoid.image = safeData
+            completion(safeData)
+        }).resume()
+    }
+    func imageDload(_ factoid: CanadaModel, _ completion: @escaping (Data?) -> Void) {
+        let URLStr = factoid.imagehref ?? ""
+        if (URLStr == "") {
+            completion(nil)
+            return
+        }
+        if let data = self.imagesCache.object(forKey: NSString(string: URLStr)) {
+            completion(Data(referencing: data))
+        } else {
+            self.imager(factoid, completion)
+        }
     }
 }

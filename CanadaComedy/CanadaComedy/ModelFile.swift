@@ -16,6 +16,7 @@ class CanadaModel: Codable {
     var title: String?
     var description: String?
     var imagehref: String?
+    var image: Data?
     enum CanadaModel: String, CodingKey {
         case title = "title"
         case description = "description"
