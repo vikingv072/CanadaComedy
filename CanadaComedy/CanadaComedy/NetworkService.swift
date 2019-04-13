@@ -55,6 +55,7 @@ final class NetworkService {
     }
     func imageDload(_ factoid: CanadaModel, _ completion: @escaping (Data?) -> Void) {
         let URLStr = factoid.imagehref ?? ""
+        //swiftlint:disable:next control_statement
         if (URLStr == "") {
             completion(nil)
             return

@@ -37,8 +37,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return self.viewModel.counter
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = self.viewModel.titleRetrieve(indexPath.row)
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? FactTableViewCell
+        cell?.imageConfigurer(with: viewModel.canadaFacts[indexPath.row])
+        cell?.textConfigurer(with: viewModel.canadaFacts[indexPath.row])
+        return cell!
     }
 }

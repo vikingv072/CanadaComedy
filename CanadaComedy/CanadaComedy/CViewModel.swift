@@ -9,7 +9,7 @@
 import Foundation
 
 class CViewModel {
-    private var canadaFacts = [CanadaModel]() {
+    var canadaFacts = [CanadaModel]() {
         didSet {
             self.updateUI?()
         }
@@ -25,10 +25,5 @@ class CViewModel {
         NetworkService.shared.downloader({ [weak self] canadaFacts in
             self?.canadaFacts = canadaFacts
         })
-    }
-    func titleRetrieve(_ index: Int) -> String {
-        let factoid = self.canadaFacts[index]
-        guard let titleText = factoid.title else { return "Null" }
-        return titleText
     }
 }

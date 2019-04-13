@@ -20,6 +20,10 @@
 		AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37D225E776B00076F92 /* ModelFile.swift */; };
 		AF29D380225E7BBD00076F92 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37F225E7BBD00076F92 /* NetworkService.swift */; };
 		AF29D382225E893600076F92 /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D381225E893600076F92 /* CViewModel.swift */; };
+		AFED443E22621F2500CEA90F /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED443D22621F2500CEA90F /* FactTableViewCell.swift */; };
+		AFED44402262229000CEA90F /* Qmark??.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFED443F2262229000CEA90F /* Qmark??.jpg */; };
+		AFED44412262229000CEA90F /* Qmark??.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFED443F2262229000CEA90F /* Qmark??.jpg */; };
+		AFED44422262229000CEA90F /* Qmark??.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFED443F2262229000CEA90F /* Qmark??.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,9 @@
 		AF29D37F225E7BBD00076F92 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AF29D381225E893600076F92 /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
 		AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.release.xcconfig"; sourceTree = "<group>"; };
+		AFED443C22621F2500CEA90F /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FactTableViewCell.xib; path = "/Users/C02PX1DFFVH5/Desktop/Xcode@MAC/CanadaComedy/CanadaComedy/CanadaComedy/FactTableViewCell.xib"; sourceTree = "<absolute>"; };
+		AFED443D22621F2500CEA90F /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FactTableViewCell.swift; path = "/Users/C02PX1DFFVH5/Desktop/Xcode@MAC/CanadaComedy/CanadaComedy/CanadaComedy/FactTableViewCell.swift"; sourceTree = "<absolute>"; };
+		AFED443F2262229000CEA90F /* Qmark??.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Qmark??.jpg"; sourceTree = "<group>"; };
 		C982B846706CACF80A172652 /* Pods-CanadaComedyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyTests.debug.xcconfig"; path = "Target Support Files/Pods-CanadaComedyTests/Pods-CanadaComedyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E899678964FBAFC6AF0D6506 /* Pods-CanadaComedyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedyUITests.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedyUITests/Pods-CanadaComedyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EB3DE126E68FDFF0BCE66371 /* Pods_CanadaComedy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanadaComedy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,8 +132,11 @@
 				AF29D381225E893600076F92 /* CViewModel.swift */,
 				AF29D37D225E776B00076F92 /* ModelFile.swift */,
 				AF29D37F225E7BBD00076F92 /* NetworkService.swift */,
+				AFED443D22621F2500CEA90F /* FactTableViewCell.swift */,
+				AFED443C22621F2500CEA90F /* FactTableViewCell.xib */,
 				AF18E621225E743900842140 /* Main.storyboard */,
 				AF18E624225E743900842140 /* Assets.xcassets */,
+				AFED443F2262229000CEA90F /* Qmark??.jpg */,
 				AF18E626225E743900842140 /* LaunchScreen.storyboard */,
 				AF18E629225E743900842140 /* Info.plist */,
 			);
@@ -282,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFED44402262229000CEA90F /* Qmark??.jpg in Resources */,
 				AF18E628225E743900842140 /* LaunchScreen.storyboard in Resources */,
 				AF18E625225E743900842140 /* Assets.xcassets in Resources */,
 				AF18E623225E743900842140 /* Main.storyboard in Resources */,
@@ -292,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFED44412262229000CEA90F /* Qmark??.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFED44422262229000CEA90F /* Qmark??.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +411,7 @@
 				AF29D382225E893600076F92 /* CViewModel.swift in Sources */,
 				AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */,
 				AF18E620225E743900842140 /* MainViewController.swift in Sources */,
+				AFED443E22621F2500CEA90F /* FactTableViewCell.swift in Sources */,
 				AF29D380225E7BBD00076F92 /* NetworkService.swift in Sources */,
 				AF18E61E225E743900842140 /* AppDelegate.swift in Sources */,
 			);
