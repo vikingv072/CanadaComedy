@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
     func setTable() {
         self.tableView.dataSource = self
         let factsNib = UINib(nibName: "FactTableViewCell", bundle: nil)
-        tableView.register(factsNib, forCellReuseIdentifier: "FactTableViewCell")
+        self.tableView.register(factsNib, forCellReuseIdentifier: "FactTableViewCell")
     }
 }
 
@@ -37,9 +37,16 @@ extension MainViewController: UITableViewDataSource {
         return self.viewModel.counter
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? FactTableViewCell
+        // swiftlint:disable:next line_length
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FactTableViewCell", for: indexPath) as? FactTableViewCell
         cell?.imageConfigurer(with: viewModel.canadaFacts[indexPath.row])
         cell?.textConfigurer(with: viewModel.canadaFacts[indexPath.row])
         return cell!
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
