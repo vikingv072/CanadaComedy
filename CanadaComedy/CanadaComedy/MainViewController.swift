@@ -22,13 +22,14 @@ class MainViewController: UIViewController {
         self.viewModel.getFacts()
     }
     func setTable() {
+        self.tableView.delegate = self
         self.tableView.dataSource = self
         let factsNib = UINib(nibName: "FactTableViewCell", bundle: nil)
         self.tableView.register(factsNib, forCellReuseIdentifier: "FactTableViewCell")
     }
 }
 
-extension MainViewController: UITableViewDataSource {
+extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -40,13 +41,24 @@ extension MainViewController: UITableViewDataSource {
         // swiftlint:disable:next line_length
         let cell = tableView.dequeueReusableCell(withIdentifier: "FactTableViewCell", for: indexPath) as? FactTableViewCell
         cell?.imageConfigurer(with: viewModel.canadaFacts[indexPath.row])
-        cell?.textConfigurer(with: viewModel.canadaFacts[indexPath.row])
+        cell?.titleConfigurer(with: viewModel.canadaFacts[indexPath.row])
+        cell?.descConfigurer(with: viewModel.canadaFacts[indexPath.row])
         return cell!
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // swiftlint:disable:next line_length 
+        guard let vc1 = storyboard?.instantiateViewController(withIdentifier: "ExtensiveViewController") as? ExtensiveViewController else {
+            return
+        }
+        vc1.loadViewIfNeeded()
+        vc1.titleLabel.text = self.viewModel.titleRetrieve(indexPath.row)
+        vc1.descLabel.text = self.viewModel.descRetrieve(indexPath.row)
+        let datum = self.viewModel.imageRetrieve(indexPath.row)
+        if let imaged = datum {
+            vc1.imageViews.image = UIImage(data: imaged)
+        } else {
+            vc1.imageViews.image = UIImage(named: "Qmark??")
+        }
+        show(vc1, sender: nil)
     }
 }

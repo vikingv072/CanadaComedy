@@ -25,15 +25,16 @@ class FactTableViewCell: UITableViewCell {
             }
         }
     }
-    func textConfigurer(with factoid: CanadaModel) {
+    func titleConfigurer(with factoid: CanadaModel) {
         if let name = factoid.title {
             titleLabel.text = name
         } else {
             titleLabel.text = "N/A"
         }
+    }
+    func descConfigurer(with factoid: CanadaModel) {
         if let desc = factoid.description {
             descLabel.text = desc
-            descLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
         } else {
             descLabel.text = "N/A"
         }

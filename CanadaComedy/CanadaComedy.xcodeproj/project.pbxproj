@@ -20,6 +20,7 @@
 		AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37D225E776B00076F92 /* ModelFile.swift */; };
 		AF29D380225E7BBD00076F92 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D37F225E7BBD00076F92 /* NetworkService.swift */; };
 		AF29D382225E893600076F92 /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29D381225E893600076F92 /* CViewModel.swift */; };
+		AFE186412268F5E300EBA0BB /* ExtensiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE186402268F5E300EBA0BB /* ExtensiveViewController.swift */; };
 		AFED44402262229000CEA90F /* Qmark??.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFED443F2262229000CEA90F /* Qmark??.jpg */; };
 		AFED44412262229000CEA90F /* Qmark??.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFED443F2262229000CEA90F /* Qmark??.jpg */; };
 		AFED44422262229000CEA90F /* Qmark??.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFED443F2262229000CEA90F /* Qmark??.jpg */; };
@@ -66,6 +67,7 @@
 		AF29D37F225E7BBD00076F92 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AF29D381225E893600076F92 /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
 		AF6C1C109E6CCC0AA36DE6A3 /* Pods-CanadaComedy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaComedy.release.xcconfig"; path = "Target Support Files/Pods-CanadaComedy/Pods-CanadaComedy.release.xcconfig"; sourceTree = "<group>"; };
+		AFE186402268F5E300EBA0BB /* ExtensiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensiveViewController.swift; sourceTree = "<group>"; };
 		AFED443F2262229000CEA90F /* Qmark??.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Qmark??.jpg"; sourceTree = "<group>"; };
 		AFED44432262B0FE00CEA90F /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		AFED44442262B0FE00CEA90F /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactTableViewCell.xib; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				AFED44432262B0FE00CEA90F /* FactTableViewCell.swift */,
 				AFED44442262B0FE00CEA90F /* FactTableViewCell.xib */,
 				AF18E621225E743900842140 /* Main.storyboard */,
+				AFE186402268F5E300EBA0BB /* ExtensiveViewController.swift */,
 				AF18E624225E743900842140 /* Assets.xcassets */,
 				AFED443F2262229000CEA90F /* Qmark??.jpg */,
 				AF18E626225E743900842140 /* LaunchScreen.storyboard */,
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE186412268F5E300EBA0BB /* ExtensiveViewController.swift in Sources */,
 				AF29D382225E893600076F92 /* CViewModel.swift in Sources */,
 				AF29D37E225E776B00076F92 /* ModelFile.swift in Sources */,
 				AF18E620225E743900842140 /* MainViewController.swift in Sources */,

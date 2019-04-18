@@ -9,6 +9,7 @@
 import Foundation
 
 class CViewModel {
+    var imgData: Data? = Data()
     var canadaFacts = [CanadaModel]() {
         didSet {
             self.updateUI?()
@@ -25,5 +26,27 @@ class CViewModel {
         NetworkService.shared.downloader({ [weak self] canadaFacts in
             self?.canadaFacts = canadaFacts
         })
+    }
+    func titleRetrieve(_ index: Int) -> String {
+        if let title = self.canadaFacts[index].title {
+            return title
+        } else {
+            return "N/A"
+        }
+    }
+    func descRetrieve(_ index: Int) -> String {
+        if let desc = self.canadaFacts[index].description {
+            return desc
+        } else {
+            return "N/A"
+        }
+    }
+    func imageRetrieve(_ index: Int) -> Data? {
+        let reqFact = self.canadaFacts[index]
+        NetworkService.shared.imageDload(reqFact) {[weak self] (imagedata) in DispatchQueue.main.async {
+            self?.imgData = imagedata
+            }
+        }
+        return self.imgData
     }
 }
