@@ -41,12 +41,12 @@ class CViewModel {
             return "N/A"
         }
     }
-    func imageRetrieve(_ index: Int) -> Data? {
+    func imageRetrieve(_ index: Int, _ completion: @escaping (Data?) -> Void) {
         let reqFact = self.canadaFacts[index]
         NetworkService.shared.imageDload(reqFact) {[weak self] (imagedata) in DispatchQueue.main.async {
             self?.imgData = imagedata
+            completion(self?.imgData)
             }
         }
-        return self.imgData
     }
 }

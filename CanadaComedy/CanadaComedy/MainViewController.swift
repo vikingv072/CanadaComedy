@@ -54,7 +54,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         vc1.loadViewIfNeeded()
         vc1.titleLabel.text = self.viewModel.titleRetrieve(indexPath.row)
         vc1.descLabel.text = self.viewModel.descRetrieve(indexPath.row)
-        vc1.datum = self.viewModel.imageRetrieve(indexPath.row)
-        show(vc1, sender: nil)
+        self.viewModel.imageRetrieve(indexPath.row) { [weak self] (data) in
+            vc1.datum = data
+            self?.show(vc1, sender: nil)
+        }
     }
 }
