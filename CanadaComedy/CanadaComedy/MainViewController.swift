@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     private var viewModel: CViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.viewModel = CViewModel ({[weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -30,7 +31,6 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

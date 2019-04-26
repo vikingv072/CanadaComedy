@@ -15,14 +15,17 @@ class ExtensiveViewController: UIViewController {
     @IBOutlet weak var imageViews: UIImageView!
     var datum: Data? = Data()
     override func viewWillAppear(_ animated: Bool) {
-        if datum != nil {
-            self.imageViews.image = UIImage(data: datum!)
-        } else {
-            self.imageViews.image = UIImage(named: "Qmark??")
-        }
+        super.viewWillAppear(animated)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let data = datum {
+            self.imageViews.image = UIImage(data: data)
+            print(UIImage(data: data))
+            self.view.layoutIfNeeded()
+        } else {
+            self.imageViews.image = UIImage(named: "Qmark??")
+        }
     }
 }
