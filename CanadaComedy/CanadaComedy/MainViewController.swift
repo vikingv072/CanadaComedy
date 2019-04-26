@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -53,12 +54,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         vc1.loadViewIfNeeded()
         vc1.titleLabel.text = self.viewModel.titleRetrieve(indexPath.row)
         vc1.descLabel.text = self.viewModel.descRetrieve(indexPath.row)
-        let datum = self.viewModel.imageRetrieve(indexPath.row)
-        if let imaged = datum {
-            vc1.imageViews.image = UIImage(data: imaged)
-        } else {
-            vc1.imageViews.image = UIImage(named: "Qmark??")
-        }
+        vc1.datum = self.viewModel.imageRetrieve(indexPath.row)
         show(vc1, sender: nil)
     }
 }

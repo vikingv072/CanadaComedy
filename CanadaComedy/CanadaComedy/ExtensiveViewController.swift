@@ -13,6 +13,14 @@ class ExtensiveViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var imageViews: UIImageView!
+    var datum: Data? = Data()
+    override func viewWillAppear(_ animated: Bool) {
+        if datum != nil {
+            self.imageViews.image = UIImage(data: datum!)
+        } else {
+            self.imageViews.image = UIImage(named: "Qmark??")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -45,17 +45,17 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="pSd-yf-j0H" secondAttribute="bottom" constant="11.5" id="0Ka-3f-Jva"/>
+                    <constraint firstItem="ggN-22-R4U" firstAttribute="top" secondItem="n6S-hm-a6m" secondAttribute="bottom" constant="8" id="65d-XK-t5b"/>
                     <constraint firstItem="pSd-yf-j0H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="87L-Ug-7Al"/>
                     <constraint firstItem="ggN-22-R4U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CRF-o3-AhU"/>
                     <constraint firstItem="n6S-hm-a6m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Pjg-U0-sDi"/>
-                    <constraint firstItem="pSd-yf-j0H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="277" id="QAj-oL-3ZL"/>
                     <constraint firstAttribute="trailing" secondItem="n6S-hm-a6m" secondAttribute="trailing" constant="159" id="RlZ-RA-KC0"/>
                     <constraint firstAttribute="trailing" secondItem="pSd-yf-j0H" secondAttribute="trailing" constant="9" id="WDd-AG-x3g"/>
-                    <constraint firstItem="ggN-22-R4U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="54" id="WRC-71-K5S"/>
-                    <constraint firstAttribute="bottom" secondItem="n6S-hm-a6m" secondAttribute="bottom" constant="102.5" id="ZyB-oa-3zW"/>
                     <constraint firstAttribute="bottom" secondItem="ggN-22-R4U" secondAttribute="bottom" constant="12.5" id="fo0-Ve-xDX"/>
+                    <constraint firstItem="pSd-yf-j0H" firstAttribute="leading" secondItem="ggN-22-R4U" secondAttribute="trailing" constant="6" id="jtd-No-oa5"/>
                     <constraint firstAttribute="trailing" secondItem="ggN-22-R4U" secondAttribute="trailing" constant="157" id="lm3-22-5eI"/>
                     <constraint firstItem="n6S-hm-a6m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="nZg-mj-HPK"/>
+                    <constraint firstItem="pSd-yf-j0H" firstAttribute="leading" secondItem="n6S-hm-a6m" secondAttribute="trailing" constant="8" id="uat-fF-afF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
