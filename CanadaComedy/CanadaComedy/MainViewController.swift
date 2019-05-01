@@ -13,7 +13,6 @@ class MainViewController: UIViewController {
     private var viewModel: CViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.viewModel = CViewModel ({[weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -58,5 +57,12 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             vc1.datum = data
             self?.show(vc1, sender: nil)
         }
+    }
+}
+
+extension NSLayoutConstraint {
+    override open var description: String {
+        let ide = identifier ?? ""
+        return "id: \(ide), constant: \(constant)"
     }
 }

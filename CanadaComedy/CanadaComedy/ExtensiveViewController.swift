@@ -10,9 +10,6 @@ import UIKit
 
 class ExtensiveViewController: UIViewController {
 
-    @IBAction func backButton(_ sender: Any) {
-        
-    }
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var imageViews: UIImageView!
