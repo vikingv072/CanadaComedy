@@ -131,16 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				AF18E61D225E743900842140 /* AppDelegate.swift */,
-				AF18E61F225E743900842140 /* MainViewController.swift */,
-				AF29D381225E893600076F92 /* CViewModel.swift */,
-				AF29D37D225E776B00076F92 /* ModelFile.swift */,
-				AF29D37F225E7BBD00076F92 /* NetworkService.swift */,
-				AFED44432262B0FE00CEA90F /* FactTableViewCell.swift */,
-				AFED44442262B0FE00CEA90F /* FactTableViewCell.xib */,
-				AF18E621225E743900842140 /* Main.storyboard */,
-				AFE186402268F5E300EBA0BB /* ExtensiveViewController.swift */,
-				AF18E624225E743900842140 /* Assets.xcassets */,
+				AFCAE1E9227CDBEA0043F16E /* Services */,
+				AFCAE1E6227CDB770043F16E /* Model */,
+				AFCAE1E7227CDB8B0043F16E /* View */,
+				AFCAE1E8227CDBB10043F16E /* View Model */,
 				AFED443F2262229000CEA90F /* Qmark??.jpg */,
+				AF18E621225E743900842140 /* Main.storyboard */,
+				AF18E624225E743900842140 /* Assets.xcassets */,
 				AF18E626225E743900842140 /* LaunchScreen.storyboard */,
 				AF18E629225E743900842140 /* Info.plist */,
 			);
@@ -163,6 +160,41 @@
 				AF18E63F225E743A00842140 /* Info.plist */,
 			);
 			path = CanadaComedyUITests;
+			sourceTree = "<group>";
+		};
+		AFCAE1E6227CDB770043F16E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF29D37D225E776B00076F92 /* ModelFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFCAE1E7227CDB8B0043F16E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFED44432262B0FE00CEA90F /* FactTableViewCell.swift */,
+				AFED44442262B0FE00CEA90F /* FactTableViewCell.xib */,
+				AF18E61F225E743900842140 /* MainViewController.swift */,
+				AFE186402268F5E300EBA0BB /* ExtensiveViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFCAE1E8227CDBB10043F16E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF29D381225E893600076F92 /* CViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AFCAE1E9227CDBEA0043F16E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF29D37F225E7BBD00076F92 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B9AE6CEA144083B96A01711C /* Frameworks */ = {
