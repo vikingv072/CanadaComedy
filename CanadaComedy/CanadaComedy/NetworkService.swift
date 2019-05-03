@@ -51,9 +51,13 @@ final class NetworkService {
             }
             let httpresponse = URLResponse as? HTTPURLResponse
             print(httpresponse?.statusCode ?? "200")
-            self.imagesCache.setObject(NSData(data: safeData), forKey: NSString(string: URlstr))
-            factoid.image = safeData
-            completion(safeData)
+            if httpresponse?.statusCode == 200 {
+                self.imagesCache.setObject(NSData(data: safeData), forKey: NSString(string: URlstr))
+                factoid.image = safeData
+                completion(safeData)
+            } else {
+                completion(nil)
+            }
         }).resume()
     }
     func imageDload(_ factoid: CanadaModel, _ completion: @escaping (Data?) -> Void) {
