@@ -11,11 +11,20 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private var viewModel: CViewModel!
+    var currCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = CViewModel ({[weak self] in
+            guard let weakSelf = self else { return }
             DispatchQueue.main.async {
-                self?.tableView.reloadData()
+                var indexPaths = [IndexPath]()
+                let newCounter = weakSelf.viewModel.counter
+                for index in weakSelf.currCount..<newCounter {
+                    indexPaths.append(IndexPath(row: index, section: 0))
+                }
+                weakSelf.tableView.insertRows(at: indexPaths, with: .automatic)
+                weakSelf.currCount = newCounter
+                //weakSelf.tableView.reloadData()
             }
         })
         self.setTable()
@@ -37,6 +46,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.counter
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // swiftlint:disable:next line_length
         let cell = tableView.dequeueReusableCell(withIdentifier: "FactTableViewCell", for: indexPath) as? FactTableViewCell
@@ -44,6 +56,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         cell?.titleConfigurer(with: viewModel.canadaFacts[indexPath.row])
         cell?.descConfigurer(with: viewModel.canadaFacts[indexPath.row])
         return cell!
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == self.viewModel.counter - 1 {
+            viewModel.loadMoreItems()
+        }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // swiftlint:disable:next line_length 

@@ -8,6 +8,8 @@
 
 import Foundation
 
+private let INCREMENTval = 4
+
 class CViewModel {
     var imgData: Data? = Data()
     var canadaFacts = [CanadaModel]() {
@@ -16,15 +18,15 @@ class CViewModel {
         }
     }
     private var updateUI: (() -> Void)?
-    var counter: Int {
-        return canadaFacts.count
-    }
+    var counter: Int = 0
+    private var isLoading = false
     init(_ callback: (() -> Void)?) {
         self.updateUI = callback
     }
     func getFacts() {
         NetworkService.shared.downloader({ [weak self] canadaFacts in
             self?.canadaFacts = canadaFacts
+            self?.loadMoreItems()
         })
     }
     func titleRetrieve(_ index: Int) -> String {
@@ -46,6 +48,26 @@ class CViewModel {
         NetworkService.shared.imageDload(reqFact) {[weak self] (imagedata) in DispatchQueue.main.async {
             self?.imgData = imagedata
             completion(self?.imgData)
+            }
+        }
+    }
+    func loadMoreItems() {
+        if isLoading == true { return }
+        isLoading = true
+        let newAmount = min(counter + INCREMENTval, canadaFacts.count) // whatever increment value is
+        // load the next 4 images
+        let group = DispatchGroup()
+        group.notify(queue: .main) { [weak self] in
+            guard let weakSelf = self else { return }
+            weakSelf.counter = newAmount
+            weakSelf.updateUI?()
+            weakSelf.isLoading = false
+        }
+        for index in counter..<newAmount {
+            group.enter()
+            let reqFact = self.canadaFacts[index]
+            NetworkService.shared.imageDload(reqFact) { (_) in
+                group.leave()
             }
         }
     }

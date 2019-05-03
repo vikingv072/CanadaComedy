@@ -44,10 +44,13 @@ final class NetworkService {
             return
         }
         guard let nURL = URL(string: URlstr) else { return }
-        URLSession.shared.dataTask(with: nURL, completionHandler: { (data, _, _) in guard let safeData = data else {
+         // swiftlint:disable:next line_length
+        URLSession.shared.dataTask(with: nURL, completionHandler: { (data, URLResponse, _) in guard let safeData = data, URLResponse != nil else {
             completion(nil)
             return
             }
+            let httpresponse = URLResponse as? HTTPURLResponse
+            print(httpresponse?.statusCode ?? "200")
             self.imagesCache.setObject(NSData(data: safeData), forKey: NSString(string: URlstr))
             factoid.image = safeData
             completion(safeData)
